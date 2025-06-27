@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f2937; /* Cinza escuro elegante */
+    color: #e5e7eb; /* Cinza claro para contraste */
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    padding: 2rem;
+    border-right: 1px solid #374151; /* Cinza médio */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #111827; /* Fundo mais escuro para destacar o aside */
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+aside label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #f3f4f6; /* Cinza claro */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#box {
+    width: 250px;
+    height: 250px;
+    background-color: #1e40af; /* Azul profundo */
+    border: 5px solid #3b82f6; /* Azul vibrante */
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+input[type="range"] {
+    width: 250px;
+    cursor: pointer;
+    accent-color: #3b82f6; /* Azul do controle deslizante */
+    border-radius: 1rem;
+}
+
+input[type="color"] {
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 50px;
+    height: 30px;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #374151;
+    color: #f9fafb;
+    cursor: pointer;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    background-color: #1f2a41;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+}
+
+.value {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #93c5fd; /* Azul suave para destacar o valor */
+}
+
+input[type="range"]:hover,
+select:hover,
+input[type="color"]:hover {
+    filter: brightness(1.2);
+}
+
+input[type="range"]:active,
+select:active,
+input[type="color"]:active {
+    transform: scale(1.02);
+}
