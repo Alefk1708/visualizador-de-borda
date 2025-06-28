@@ -13,7 +13,7 @@
         <input type="range" id="borderSlider" min="1" max="20" value="5" />
 
         <div class="value">
-          <p>Espessura atual:<span id="borderValue"> 5px</span></p>
+          <p>Espessura atual: <span class="borderValue">5px</span></p>
         </div>
       </div>
       
@@ -22,7 +22,7 @@
         <input type="range" id="radiusSlider" min="0" max="125" value="0">
 
         <div class="value">
-          <p>Raio atual: <span id="borderRadius">0px</span></p>
+          <p>Raio atual: <span class="borderRadius">0px</span></p>
         </div>
       </div>
 
@@ -43,10 +43,19 @@
 
       <div>
         <label for="border-color">Cor da Borda:</label>
-        <input type="color" name="color" id="color">
+        <input type="color" name="color" id="color" value="#3b82f6">
       </div>
 
-      
+      <div>
+        <button id="copy"><img src="/assets/copy.png" alt="icone de copiar"></button>
+        <p id="cssCode">
+          #box { <br>
+          border-width: <span class="borderValue"> 5px</span> ; <br>
+          border-radius: <span class="borderRadius">0px</span> ; <br>
+          border-style: <span id="styleDisplay">solid</span> ; <br>
+          border-color: <span id="colorDisplay">#3b82f6</span>; <br>
+        }</p>
+      </div>
 
     </aside>
     <section>

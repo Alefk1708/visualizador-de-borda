@@ -22,7 +22,8 @@ aside {
     gap: 2rem;
     background-color: #111827; /* Fundo mais escuro para destacar o aside */
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
-    width: 350px;
+    width: 30rem;
+    overflow-y: scroll;
 }
 
 aside label {
@@ -37,6 +38,22 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+textarea {
+    height: 50rem;
+}
+
+#copy {
+    background: none;
+    border: none;
+    position: relative;
+    left: 40%;
+    transition: 0.3s;
+}
+
+#copy:hover {
+    opacity: 0.4;
 }
 
 #box {
